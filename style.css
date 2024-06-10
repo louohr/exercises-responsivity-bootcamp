@@ -1,0 +1,50 @@
+header {
+    background-color: rgb(98, 0, 128);
+    width: 1870px;
+    height: 100px;
+    padding: 15px;
+}
+
+aside.one {
+    background-color: rgb(172, 28, 148);
+    width: 200px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+aside.two {
+    background-color: rgb(172, 28, 148);
+    width: 200px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+aside.three {
+    background-color: rgb(172, 28, 148);
+    width: 200px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+aside.four {
+    background-color: rgb(172, 28, 148);
+    width: 200px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+aside.five {
+    background-color: rgb(172, 28, 148);
+    width: 200px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+footer {
+    background-color: lightgreen;
+    width: 1870px;
+    height: 100px;
+    padding: 15px;
+}
