@@ -69,3 +69,85 @@
     justify-content: space-between;
     width: 35%;
 }
+
+footer {
+    background-color: lightgreen;
+    width: 1810px;
+    height: 100px;
+    padding: 44px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .purple-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .light-pink-block,
+    .hotpink-block {
+        width: 90%;
+    }
+
+    .light-pink-one,
+    .light-pink-two,
+    .light-pink-three,
+    .light-pink-four,
+    .hotpink-one,
+    .hotpink-two,
+    .hotpink-three,
+    .five {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four {
+        width: 100%;
+        height: 80px;
+    }
+
+    .light-pink-one,
+    .light-pink-two,
+    .light-pink-three,
+    .light-pink-four,
+    .hotpink-one,
+    .hotpink-two,
+    .hotpink-three {
+        height: 150px;
+        margin-top: 10px;
+    }
+
+    .light-pink-block,
+    .hotpink-block {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
