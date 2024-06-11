@@ -1,0 +1,71 @@
+.logo {
+    background-color: rgb(56, 2, 56);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.one,
+.two,
+.three,
+.four {
+    background-color: purple;
+    width: 470px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.purple-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.light-pink-one,
+.light-pink-two,
+.light-pink-three,
+.light-pink-four {
+    background-color: pink;
+    height: 200px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.light-pink-one,
+.light-pink-three {
+    margin-right: 10px;
+}
+
+
+.light-pink-block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 1%;
+}
+
+.hotpink-one,
+.hotpink-two,
+.hotpink-three {
+    background-color: hotpink;
+    height: 120px;
+    width: 400px;
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+
+.hotpink-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+}
