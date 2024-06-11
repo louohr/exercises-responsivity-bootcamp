@@ -1,7 +1,7 @@
-.one,
-.two,
-.three,
-.four {
+.purple-one,
+.purple-two,
+.purple-three,
+.purple-four {
     background-color: purple;
     width: 470px;
     height: 100px;
@@ -35,7 +35,7 @@ footer {
     padding: 44px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
     .one,
     .two,
@@ -43,6 +43,19 @@ footer {
     .four {
         width: 48%;
         margin: 1%;
-        flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .pink-one,
+    .pink-two,
+    .pink-three {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .pink-block {
+        flex-direction: column;
+        height: 200px;
     }
 }
