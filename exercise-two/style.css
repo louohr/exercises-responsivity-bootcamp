@@ -12,7 +12,7 @@ header {
 .block {
     width: 500px;
     height: 100px;
-    background-color: purple;
+    background-color: rgb(170, 0, 170);
     color: white;
     display: flex;
     justify-content: center;
