@@ -1,65 +1,73 @@
-.one,
-.two,
-.three,
-.four {
-    background-color: purple;
-    width: 470px;
-    height: 100px;
+body {
+    margin: 0;
 }
 
-.purple-block {
+header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.pink-one,
-.pink-two,
-.pink-three {
-    background-color: pink;
-    width: 630px;
-    height: 600px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.block {
+    width: 500px;
+    height: 100px;
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+header .block:first-child {
+    margin-left: 0;
+}
+
+header .block:last-child {
+    margin-right: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .pink-block {
-    display: flex;
-    justify-content: space-between;
+    width: 630px;
+    height: 600px;
+    background-color: pink;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer {
+    min-height: 10vh;
     background-color: lightgreen;
-    width: 1818px;
-    height: 100px;
-    padding: 44px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
 
-    .one,
-    .two,
-    .three,
-    .four {
+    }
+
+    .block {
         width: 48%;
         margin: 1%;
-        flex-direction: row;
-        flex-wrap: nowrap;
     }
 
-    .pink-one,
-    .pink-two,
-    .pink-three {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .pink-block {
+    .container {
         flex-direction: column;
         height: 400px;
     }
 
-    footer {
-        height: 50px;
+    .pink-block {
+        width: 100%;
+        margin: 5px 0;
     }
 }
