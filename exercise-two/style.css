@@ -43,7 +43,7 @@ header .block:last-child {
 }
 
 footer {
-    min-height: 10vh;
+    height: 100px;
     background-color: lightgreen;
     margin-left: 10px;
     margin-right: 10px;
@@ -53,12 +53,15 @@ footer {
     header {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
 
     }
 
     .block {
         width: 48%;
-        margin: 1%;
+        margin: 1% 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .container {
@@ -67,7 +70,12 @@ footer {
     }
 
     .pink-block {
-        width: 100%;
-        margin: 5px 0;
+        width: calc(100% - 20px);
+        margin: 5px 10;
+    }
+
+    footer {
+        width: calc(100% - 20px);
+        margin: 5px 10;
     }
 }
