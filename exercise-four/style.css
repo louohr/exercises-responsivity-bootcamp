@@ -1,34 +1,101 @@
-.logo {
-    background-color: rgb(56, 2, 56);
-    height: 100px;
-    width: 100px;
+:root {
+    --main-purple: purple;
+    --main-darkpink: rgba(218, 0, 152);
+    --main-pink: pink;
+    --main-button: rgba(255, 0, 255);
+    --footer: lightgreen;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+figure {
+    background-color: var(--main-purple);
+    width: fit-content;
+    padding: 2.5rem;
     border-radius: 50%;
 }
 
-.purple-block {
-    background-color: purple;
-    height: 150px;
-    width: 600px;
-    margin-top: 30px;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.pink-block {
-    background-color: pink;
-    height: 150px;
-    width: 600px;
-    margin-top: 30px;
+.blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
 }
 
-.light-purple-block {
-    background-color: lightpink;
-    height: 150px;
-    width: 400px;
+.blocks section {
+    margin: .3rem;
+    padding: 3rem;
+}
+
+.darkpink-block-one,
+.darkpink-block-two {
+    background-color: var(--main-darkpink);
+}
+
+.pink-block-one,
+.pink-block-two {
+    background-color: var(--main-pink);
+}
+
+button {
+    background-color: var(--main-button);
+    height: 80px;
+    width: 300px;
+    padding: 1rem 5rem;
+    border: none;
+    border-radius: 20px;
+    align-self: center;
+    margin: 1rem;
+    cursor: pointer;
 }
 
 footer {
-    background-color: lightgreen;
-    width: 1815px;
-    height: 100px;
-    padding: 44px;
-    margin-top: 30px;
+    background-color: var(--footer);
+    padding: 2rem;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    .blocks {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pink-block-one"
+            "darkpink-block-one"
+            "pink-block-two"
+            "darkpink-block-two";
+    }
+
+    .pink-block-one {
+        grid-area: pink-block-one;
+    }
+
+    .darkpink-block-one {
+        grid-area: darkpink-block-one;
+    }
+
+    .pink-block-two {
+        grid-area: pink-block-two;
+    }
+
+    .darkpink-block-two {
+        grid-area: darkpink-block-two;
+    }
 }
